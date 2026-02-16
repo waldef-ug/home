@@ -4,88 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WALDEF</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background: linear-gradient(135deg, #6a0dad, #2ecc71);
+            background: linear-gradient(135deg, #4B0082, #00BFFF);
             color: white;
             font-family: Arial, sans-serif;
         }
-        .navbar {
-            padding: 1em;
-            background: rgba(0, 0, 0, 0.5);
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
         }
-        .navbar ul {
-            list-style:none;
-            padding: 0;
-        }
-        .navbar li {
-            display: inline;
-            margin-right: 15px;
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
         }
         .hero {
             text-align: center;
-            padding: 5em 0;
+            padding: 100px 20px;
         }
-        .core-areas {
-            padding: 2em 0;
-            background: rgba(0, 0, 0, 0.7);
+        .hero h1 {
+            font-size: 48px;
         }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            padding: 2em 0;
+        .hero p {
+            font-size: 24px;
         }
-        .legal {
-            padding: 2em 0;
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
-        .form {
-            padding: 2em 0;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        footer {
-            padding: 1em 0;
+        .section {
+            padding: 50px 20px;
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#core-focus">Core Focus Areas</a>
+        <a href="#official-objects">Official Objects</a>
+        <a href="#legal-status">Legal Status</a>
+        <a href="#partner-form">Partner Form</a>
+        <a href="#chatbot">Chatbot</a>
     </nav>
-    <section class="hero">
+    <div class="hero">
         <h1>Welcome to WALDEF</h1>
-        <p>Your partner in development</p>
-    </section>
-    <section class="core-areas">
+        <p>Your description goes here.</p>
+        <button class="button">Get Started</button>
+    </div>
+    <div class="section" id="core-focus">
         <h2>Core Focus Areas</h2>
-        <p>Details about the focus areas.</p>
-    </section>
-    <section class="grid">
+        <p>Details about core focus areas.</p>
+    </div>
+    <div class="section" id="official-objects">
         <h2>Official Objects</h2>
-        <div>Object 1</div>
-        <div>Object 2</div>
-        <div>Object 3</div>
-    </section>
-    <section class="legal">
+        <p>Details about official objects.</p>
+    </div>
+    <div class="section" id="legal-status">
         <h2>Legal Status</h2>
-        <p>Information regarding legal status.</p>
-    </section>
-    <form class="form">
-        <h2>Partnership Form</h2>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br>
-        <input type="submit" value="Submit">
-    </form>
-    <footer>
-        <p>&copy; 2026 WALDEF. All rights reserved.</p>
-    </footer>
+        <p>Information about legal status.</p>
+    </div>
+    <div class="section" id="partner-form">
+        <h2>Partner Form</h2>
+        <p>Form for partners to fill out.</p>
+    </div>
+    <div class="section" id="chatbot">
+        <h2>Chatbot</h2>
+        <p>Chatbot will be available here.</p>
+    </div>
 </body>
 </html>
